@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Board from "./components/Board";
+import Box from "./components/Box";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="homepage">
+      <header className="homepage__header">Solve Sudoku!</header>
+      <Board className="sudoku-board">
+        <div className="sudoku-board__play-area">
+          {Array(3)
+            .fill()
+            .map(() => (
+              <div className="sudoku-board__box-rows">
+                <Box />
+                <Box />
+                <Box />
+              </div>
+            ))}
+        </div>
+      </Board>
     </div>
   );
 }

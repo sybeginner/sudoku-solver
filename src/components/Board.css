@@ -1,0 +1,6 @@
+.board {
+    border: 20px solid var(--intermediate-background);
+    background-color: var(--intermediate-background);
+    box-shadow: var(--intermediate-background) 0px 1px 2px 0px, var(--primary-background) 0px 2px 6px 2px;    
+    border-radius: 10px;    
+}

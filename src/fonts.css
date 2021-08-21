@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "KgHappy";
+  src: url("./fonts/KgHappy/KgHappy-wWZZ.ttf");
+}
+
+@font-face {
+  font-family: "KgHappyShadows";
+  src: url("./fonts/KgHappy/KgHappyShadows-7KqA.ttf");
+}
+
+@font-face {
+  font-family: "KgHappySolid";
+  src: url("./fonts/KgHappy/KgHappySolid-myDG.ttf");
+}

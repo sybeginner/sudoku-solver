@@ -1,0 +1,7 @@
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid var(--primary-background);    
+    width: calc(100%/3);
+    height: 100%;
+}
