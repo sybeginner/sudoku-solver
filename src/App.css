@@ -8,11 +8,29 @@
   background-color: var(--primary-background);
   color: var(--primary-text);
   font-family: 'KgHappy';
-  font-size: 25px;  
+  font-size: var(--font-large);  
 }
 
 .homepage__header {
-  margin: 20px 0;
+  margin: 20px 0 0;
+}
+
+.homepage__warning {
+  margin-top: 0;
+  font: inherit;
+  font-size: var(--font-small);
+  color: var(--intermediate-text);
+  visibility: hidden;
+  opacity: 0;
+  line-height: 0px;
+  transition: line-height 0.5s linear, opacity 0.5s ease;
+}
+
+.homepage__warning--active {
+  margin-top: 10px;
+  visibility: visible;
+  line-height: inherit;
+  opacity: 1;
 }
 
 .sudoku-board {    
@@ -35,4 +53,27 @@
   align-items: center;  
   justify-content: space-between;      
   height: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.buttons > button {
+  margin: 20px 10px;
+  padding: 5px 10px;
+  font: inherit;
+  font-size: var(--font-medium);
+  cursor: pointer;
+  color: var(--secondary-text);
+  background-color: var(--intermediate-border);
+  border: 2px solid var(--intermediate-border);
+  box-shadow: var(--intermediate-background) 0px 1px 2px 0px, var(--primary-background) 0px 2px 6px 2px;    
+}
+
+.buttons > button:hover,
+.buttons > button:active {
+  background-color: var(--primary-text);
 }

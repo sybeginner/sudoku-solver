@@ -5,4 +5,8 @@
     --secondary-text: #1a1a1d;
     --intermediate-background: #4e4e50;
     --intermediate-border: #950740; 
+    --intermediate-text: #fff;
+    --font-large: 25px;
+    --font-medium: 20px;
+    --font-small: 15px;
 }

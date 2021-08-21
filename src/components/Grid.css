@@ -17,3 +17,17 @@
     font-family: inherit;
     text-align: center;
 }
+
+.grid__input--answer {
+    color: var(--primary-text);
+}
+
+.grid__input::-webkit-inner-spin-button,
+.grid__input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.grid__input[type=number] {
+    -moz-appearance: textfield;
+}
