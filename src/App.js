@@ -4,11 +4,16 @@ import Board from "./components/Board";
 import "./App.css";
 
 function App() {
+  const [theme, setTheme] = useState('dark-theme');
   const [started, setStarted] = useState(false);
   const [clear, setClear] = useState(true);
   const [answered, setAnswered] = useState(false);
   const [invalid, setInvalid] = useState('');
   const [sample, setSample] = useState(false);
+
+  const themeHandler = (theme) => {
+    setTheme(theme);
+  }
 
   const answerHandler = () => {
     setAnswered((prevState) => !prevState);
@@ -80,12 +85,17 @@ function App() {
     </div>
   );
 
+  const pageClasses = 'homepage ' + theme;
   const title = "Solve Sudoku!";
   const warningClasses =
     "homepage__warning " + (invalid ? " homepage__warning--active" : null);
 
   return (
-    <div className="homepage">
+    <div className={pageClasses}>
+      <div className='theme-buttons'>
+        <button className='theme-buttons--light' onClick={() => themeHandler('light-theme')}>Light Mode</button>
+        <button className='theme-buttons--dark' onClick={() => themeHandler('dark-theme')}>Dark Mode</button>
+      </div>
       <header className="homepage__header">{title}</header>
       <p className={warningClasses}>{invalid}</p>
       <Board

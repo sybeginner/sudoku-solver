@@ -18,6 +18,10 @@
     text-align: center;
 }
 
+.grid__input:disabled :not(.grid__input--answer) {
+    color: var(--font-disabled-color);
+}
+
 .grid__input--answer {
     color: var(--primary-text);
 }

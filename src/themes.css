@@ -1,4 +1,19 @@
-:root {
+.light-theme {
+    --primary-background: #f7f9fb;
+    --primary-text: #31708E;
+    --secondary-background: #8fc1e3;
+    --secondary-text: #f7f9fb;
+    --intermediate-background: #31708E;
+    --intermediate-border: #5085A6; 
+    --intermediate-text: #31708E;    
+    --font-large: 25px;
+    --font-medium: 20px;
+    --font-small: 15px;
+    --font-smallest: 12px;
+    --font-disabled-color: rgb(84, 84, 84);
+}
+
+.dark-theme {
     --primary-background: #1a1a1d;
     --primary-text: #c3073f;
     --secondary-background: #fff;
@@ -9,4 +24,6 @@
     --font-large: 25px;
     --font-medium: 20px;
     --font-small: 15px;
+    --font-smallest: 12px;
+    --font-disabled-color: rgb(84, 84, 84);
 }

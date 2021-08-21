@@ -8,7 +8,47 @@
   background-color: var(--primary-background);
   color: var(--primary-text);
   font-family: 'KgHappy';
-  font-size: var(--font-large);  
+  font-size: var(--font-large); 
+  transition: background-color .1s linear; 
+}
+
+.theme-buttons {
+  width: 60%;
+  justify-content: left;
+  padding: 0 20px;
+}
+
+.theme-buttons > button {
+  margin: 0px 5px;
+  padding: 5px 5px;
+  font: inherit;
+  font-family: 'KgHappySolid';
+  font-size: var(--font-smallest);
+  cursor: pointer;  
+}
+
+.theme-buttons--dark {
+  color: #fff;
+  background-color: #4e4e50;
+  border: 2px solid #1a1a1d;
+  box-shadow: var(--intermediate-background) 0px 1px 2px 0px, var(--primary-background) 0px 2px 6px 2px;
+}
+
+.theme-buttons--dark:hover,
+.theme-buttons--dark:active {
+  background-color: #1a1a1d;
+}
+
+.theme-buttons--light {
+  color: #1a1a1d;
+  background-color: #fff;
+  border: 2px solid #1a1a1d;
+  box-shadow: var(--intermediate-background) 0px 1px 2px 0px, var(--primary-background) 0px 2px 6px 2px;
+}
+
+.theme-buttons--light:hover,
+.theme-buttons--light:active {
+  background-color: #F5F5DC;
 }
 
 .homepage__header {
